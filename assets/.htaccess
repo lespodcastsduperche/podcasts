@@ -1,0 +1,56 @@
+#
+# Apache2.4 enhancement
+# Project URL: https://github.com/ojullien/Apache2.4
+# Author: Olivier Jullien <https://github.com/ojullien>
+#
+
+#
+#  User dir configuration file
+#
+<IfModule dir_module>
+    DirectoryIndex index.php index.html
+</IfModule>
+
+#
+# Disable directory browsing
+#
+Options -Indexes
+
+#
+# Forbid access to log files
+#
+<FilesMatch "([error|debug]\.log|error_log)$">
+    Require all denied
+</FilesMatch>
+
+# Only allow access to some php scripts from localhost
+<FilesMatch "^(cron|install|update|xmlrpc)\.php">
+    Require local
+</FilesMatch>
+
+#
+# Block access to other files that can expose sensitive information.
+#
+<FilesMatch "(^#.*#|\.(bak|conf|in[ci]|sh|sql)|~)$">
+    Require all denied
+</FilesMatch>
+
+<FilesMatch "^(readme\.txt|readme\.html|license.txt|license.commercial.txt)$">
+    Require all denied
+</FilesMatch>
+
+# BEGIN WordPress
+# Les directives (lignes) entre « BEGIN WordPress » et « END WordPress » sont générées
+# dynamiquement, et doivent être modifiées uniquement via les filtres WordPress.
+# Toute modification des directives situées entre ces marqueurs sera surchargée.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
