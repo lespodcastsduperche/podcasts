@@ -1,0 +1,34 @@
+# robots.txt enhancement
+# Project URL: https://github.com/lespodcastsduperche/podcasts
+# Author: Olivier Jullien <https://github.com/ojullien>
+User-agent: *
+Disallow: /wp-admin
+Disallow: /wp-includes
+Disallow: /wp-content
+Disallow: /wp-content/plugins
+Disallow: /wp-content/cache
+Disallow: /trackback
+Disallow: /feed
+Disallow: /comments
+Disallow: /category/*/*
+Disallow: */trackback
+Disallow: */feed
+Disallow: */comments
+Disallow: /*.pdf$
+Disallow: /*?*
+Disallow: /*?
+Disallow: /wp-login.php
+
+Allow: /wp-content/theme
+Allow: /wp-content/uploads
+
+Disallow: /*.php$
+Disallow: /*.inc$
+Disallow: /*.gz$
+Disallow: /*.pdf$
+
+User-agent: Googlebot-Image
+Disallow:
+Allow: /*
+
+Sitemap: https://lespodcastsduperche.com/sitemap_index.xml

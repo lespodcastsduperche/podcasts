@@ -4,7 +4,7 @@
 
 The WordPress theme for the Les Podcasts du Perche website.
 
-*podcasts is a child theme for the [phlox theme](https://www.phlox.pro/).*
+*Les Podcasts du Perche is a child theme for the [phlox theme](https://www.phlox.pro/).*
 
 ## Requirements
 
@@ -22,7 +22,7 @@ After downloading the **phlox.zip** and **podcasts.zip** files to your computer 
 
 ### Installation via FTP
 
-Alternatively you can also install the themes directly to your server using an FTP client (e.g. Filezilla). Just drop the **un-ziped phlox theme folder** and the **un-ziped podcasts child theme folder** into your …/wp-content/themes/ folder. Now you can see the **phlox** and the **podcasts** themes in your WordPress admin panel under Appearance → Themes → Available Themes. From here you can activate the **podcasts theme**.
+Alternatively you can also install the themes directly to your server using an FTP client (e.g. Filezilla). Just drop the **un-ziped phlox theme folder** and the **un-ziped Les Podcasts du Perche child theme folder** into your …/wp-content/themes/ folder. Now you can see the **phlox** and the **podcasts** themes in your WordPress admin panel under Appearance → Themes → Available Themes. From here you can activate the **Les Podcasts du Perche theme**.
 
 ### Assets
 

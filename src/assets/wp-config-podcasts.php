@@ -2,21 +2,25 @@
 
 /**
  * The extended configuration for WordPress
+ * Add those directives to the wp-config.php
  *
- * @package lespodcastsduperche
+ * Project URL: https://github.com/lespodcastsduperche/podcasts
+ * Author: Olivier Jullien <https://github.com/ojullien>
+ *
+ * @package lespodcastsduperche.com
  */
 
 /* Custom WordPress editor */
 define('WP_POST_REVISIONS', 1);
-define('EMPTY_TRASH_DAYS', 30); // 30 days
+define('EMPTY_TRASH_DAYS', 90); // 30 days
 define('AUTOSAVE_INTERVAL', 160); // Seconds
 //define( 'DISALLOW_FILE_EDIT', true );
 //define( 'DISALLOW_FILE_MODS', true );
 
 /* Custom WordPress admin */
 define('FORCE_SSL_ADMIN', true);
-define('WP_SITEURL', 'https://lespodcastsduperche.com/');
-define('WP_HOME', 'https://lespodcastsduperche.com/');
+define('WP_SITEURL', 'https://lespodcastsduperche.com');
+define('WP_HOME', 'https://lespodcastsduperche.com');
 //define( 'DISABLE_WP_CRON', true );
 //define( 'WP_CRON_LOCK_TIMEOUT', 60 );
 

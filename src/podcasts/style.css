@@ -1,6 +1,18 @@
-/* =============================================================================
-Theme Name: podcasts
-Theme URI: http://phlox.pro/
-Author: marie
-Template: phlox
-==============================================================================*/
+@charset "UTF-8";
+
+/*
+ Theme Name:   Les Podcasts du Perche
+ Theme URI:    https://github.com/lespodcastsduperche/podcasts
+ Description:  Les Podcasts du Perche is a child theme for phlox
+ Author:       marie
+ Author:       ojullien
+ Author URI:   https://github.com/ojullien
+ Template:     phlox
+ Version:      1.0.0
+ License:      GNU General Public License v3 or later
+ License URI:  https://www.gnu.org/licenses/gpl-3.0.en.html
+ Text Domain:  podcasts
+*/
+.oliviertest {
+    color: pink;
+}
