@@ -26,7 +26,7 @@ Alternatively you can also install the themes directly to your server using an F
 
 ### Assets
 
-The [assets](https://github.com/lespodcastsduperche/podcasts/tree/master/assets/) folder contains a .htaccess file and a robots.txt file you may copy in the WordPress root folder.
+The [assets](https://github.com/lespodcastsduperche/podcasts/tree/main/src/assets/) folder contains a .htaccess file and a robots.txt file you may copy in the WordPress root folder.
 
 ## Documentation
 
